@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>My Registration Form</h1>
+    <form action="">
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" id="first_name">
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" id="last_name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <label for="re-password">PW Confirm</label>
+        <input type="password" name="re-password" id="re-password">
+        <label for="birthday"></label>
+        <input type="date" name="date" id="date">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="other">Other</label>
+        <input type="radio" name="gender" value="other" id="other">
+        <label for="description">A short description about youself</label>
+        <textarea name="description" id="description" cols="30" rows="10" placeholder="Write here...."></textarea>
+        <label for="language">
+            Favorite language
+            <select name="langauge" id="language">
+                <option value="js">Javascript</option>
+                <option value="python">Python</option>
+                <option value="golang">Go</option>
+                <option value="java">Java</option>
+            </select>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
