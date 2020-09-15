@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center-box {
+    height: 30em;
+    width: 100vw;
+    background-color: #190080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-item {
+    height: 100px;
+    width: 100px;
+    background-color: #FAE4B5;
+}
