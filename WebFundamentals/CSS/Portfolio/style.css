@@ -1,0 +1,125 @@
+.wrapper {
+    max-width: 915px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F7F7;
+    padding: 10px;
+    height: 40px;
+}
+.container {
+    background: rgb(81,65,69);
+    background: radial-gradient(circle, rgba(81,65,69,1) 40%, rgba(119,80,80,1) 99%);
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 18px;
+}
+#me {
+    border: 5px solid gray;
+    width: 42%;
+    height: 270px;
+    margin-right: 25px;
+}
+
+.info {
+    width: 54%;
+    height: 278px;
+    background-color: #FFFFFF;
+}
+
+.subtitle  {
+    background-color: #8B8996;
+    color:white;
+    height:30px;
+    margin: 0 0 10px 0;
+    padding: 10px 0 0 10px;
+}
+
+.info p {
+    margin-top: 0;
+}
+
+.info p, .info a {
+    font-weight: 100;
+    padding-left: 10px;
+    color: black;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 277px;
+    background-color: white;
+}
+
+.project p {
+    padding: 0 7px;
+    height: 8.3%;
+}
+
+.image {
+    height: 148px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    height: 620px;
+}
+
+.projects h4 {
+    margin-bottom: 0 !important;
+}
+
+.languages {
+    flex-wrap: wrap;
+    width: 103%;
+    padding: 3px 0 3px 5px;
+}
+
+.stacks {
+    height: 40px;
+    margin: 4px 6px 5px 3px;
+}
+
+.sublink {
+    height: 20px;
+}
+
+.test {
+    margin-top: 50%;
+}
+
+button {
+    border-radius: 25px;
+    background-color: green;
+    color: white;
+    margin: 7px 30%;
+}
+
+.family .test > button {
+    margin: 3% 25%;
+    width: 50%;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 15px;
+}
