@@ -7,4 +7,4 @@ const printArray = (arr) => {
     }
 }
 
-console.log(printArray(testArr));
+printArray(testArr);
