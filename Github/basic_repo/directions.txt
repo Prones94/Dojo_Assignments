@@ -1,0 +1,8 @@
+1. Open terminal, create a local repository called basic_repo
+2. Use git init to initialize an empty repository
+3. Use git add . to add all files
+4. Use git commit -m "message" to add a message that you will send to github
+5. Open Github on my browser, create a new repository called basic_repo
+6. Copy Github url, then go back to terminal
+7. In terminal, use git remote add origin and paste the url code and press enter
+8. Use git push -u master origin to push all changes in the local repository to the github repository.

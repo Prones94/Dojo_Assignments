@@ -1,0 +1,65 @@
+1. Print all the integers from 1 to 255
+print = [ 1, 2, 5, 256]
+1,2,3,4,5......255
+var num = 1
+while (num != 255){
+    console.log(num);
+    num += 1;
+}
+2. Print all odds integers from 1 to 255
+grab number 1
+grab number 256
+loop through the numbers until it reaches 256
+add two the number 1
+for (var idx = 1; idx <= 256; idx=idx+2){
+    console.log(idx)
+}
+3. Print integers from 0 to 255, and with each integer print the sum so far
+start at 0
+sum = 0
+end goal is 255
+loop until we hit 255
+sum = starting index + sum
+let i = 0
+let sum = 0
+for (var start = 0; start <= 256; start++){
+    console.log(start);
+    sum = start + sum;
+    console.log(sum)
+}
+
+4. Iterate through a given array, printing each value
+array = [2,3,58,19,10]
+var index = 0
+loop through the array length and 
+print the values of the array
+for (var index = 0; index <= array.length; index++){
+    console.log(array[index])
+}
+
+5. Given an array, find and print its largest element
+array = [2,3,58,19,10]
+largest number = 0
+loop through the array
+    largest number to the first index or value
+    compare the first index and the second index
+        if the second index is larger
+            largest number is equal to the second index
+        else 
+            largest number stays the same
+    increase the index
+    find the largest number in the array
+print the largest number variable
+print that number
+6. Analyze an array's values and print the average
+average = 0;
+sum = 0
+loop through the array
+    add sum with the array index
+divide sum with the array length
+7. Create an array with all the odd integers between 1 and 255 (inclusive)
+create an empty array
+loop from 1 to 255
+    if index is 
+8. Square each value in a given array, returning that same array with changed values
+9. 
