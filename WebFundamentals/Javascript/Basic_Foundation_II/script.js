@@ -57,17 +57,16 @@ const evensAndOdds = arr => {
                 console.log(`Even more so!`)
             }
         }
-        if(arr[i] % 2 === 0 && odd !== 0){
+         else if(arr[i] % 2 === 0 && odd !== 0){
             odd = 0;
             even++;
         }
-        if (arr[i] % 2 !== 0 && even === 0){
+        else if (arr[i] % 2 !== 0 && even === 0){
             odd++;
             if(odd === 3){
                 console.log(`That's odd!`)
             }
-        }
-        if(arr[i] % 2 !== 0 && even !== 0){
+        } else {
             even = 0;
             odd++
         }
