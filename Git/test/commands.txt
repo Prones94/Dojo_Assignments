@@ -1,0 +1,10 @@
+Terminal commands
+    - cd 
+    - mdkir 
+    - touch
+    - cp
+    - mv 
+    - rm
+    - ls -a
+    - (sudo) rm(dir) -rf 
+    - open .
