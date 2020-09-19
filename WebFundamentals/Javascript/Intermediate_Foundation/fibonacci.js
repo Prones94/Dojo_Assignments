@@ -1,9 +1,9 @@
-function fibonacci(num, memo) {
-    memo = memo || {};
-  
-    if (memo[num]) return memo[num];
-    if (num <= 1) return 1;
-  
-    return memo[num] = fibonacci(num - 1, memo) + fibonacci(num - 2, memo);
+const fibonacci = num => {
+  if (num <= 2) {
+    return 1;
+  } else {
+    return fibonacci(num - 1) + fibonacci(num -2)
   }
-fibonacci(50, memo)
+}
+
+console.log(fibonacci(5))
