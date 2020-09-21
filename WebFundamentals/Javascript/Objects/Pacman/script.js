@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       document.addEventListener('keydown', movePacMan);
 
-      // NinjaMan eats Sushi
+      // PacMan eats coin
       const pelletEaten = () => {
           if(squares[pacManStart].classList.contains('pellet')){
               score++
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
       }
 
-      // Ninja Man eats an onigiri
+      // Pacman eats an cherry
       const cherryEaten = () => {
           if(squares[pacManStart].classList.contains('cherry')) {
               score += 50
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
               lives--
               liveDisplay.innerHTML = lives
           }
-          if(lives = 0){
+          if(lives === 0){
               ghosts.forEach(ghost => clearInterval(ghost.timerId))
               document.removeEventListener('keypress', movePacMan)
               scoreDisplay.innerHTML = 'Game Over'
