@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Ninja Man eats an onigiri
       const cherryEaten = () => {
           if(squares[pacManStart].classList.contains('cherry')) {
-              score += 10
+              score += 50
               ghosts.forEach(ghost => ghost.isScared = true)
               setTimeout(ghostTransition, 10000)
               squares[pacManStart].classList.remove('cherry')
