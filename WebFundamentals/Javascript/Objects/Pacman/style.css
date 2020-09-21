@@ -1,0 +1,72 @@
+.world {
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+    height: 560px;
+    border: 2px solid black;
+}
+
+.world div {
+    width: 20px;
+    height: 20px;
+}
+.wall {
+    background-color: blue;
+}
+.pellet {
+    background-color: black;
+    background-image: url('./images/pellet.png');
+    background-size: contain;
+    display: inline-block;
+}
+.cherry {
+    background-color: black;
+    background-image: url('./images/cherry.jpeg');
+    background-size: contain;
+    display: inline-block;
+}
+
+.pacman {
+    background-image: url(./images/pacman.jpg);
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.inky {
+    background-color: black;
+    background-image: url('./images/inky.jpg');
+    background-repeat: no-repeat;
+    background-size: 23px 21px;
+    display: inline-block;
+}
+
+.pinky {
+    background-image: url('./images/pinky.jpg');
+    background-repeat: no-repeat;
+    background-size: 23px 22px;
+    display: inline-block;
+}
+
+.clyde {
+    background-image: url('./images/clyde.jpg');
+    background-color: transparent;
+    background-size: contain;
+    display: inline-block;
+}
+
+.blinky {
+    background-image: url('./images/blinky.png');
+    background-color: transparent;
+    background-size: contain;
+    display: inline-block;
+}
+
+.scaredy {
+    background-image: url('./images/scaredy.png');
+    background-size: contain;
+    display: inline-block;
+    background-color: transparent;
+}
+
