@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getters and Setters</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).click(function(){
+            $('button').click(function(){
+                // getter function gets the value something!
+                let myText = $('#myParagraph').text();
+                alert(myText);
+            });
+            // A setter function sets the value of something!
+            $('button').click(function() {
+                $('#myParagraph').text('see how I .text() works as a setter!')
+            })
+        });
+    </script>
+    <p id="myParagraph">This is my paragraph!</p>
+    <button> Click me to change the paragraph! </button>
+</body>
+</html>
