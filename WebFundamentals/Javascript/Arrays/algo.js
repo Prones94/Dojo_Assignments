@@ -7,4 +7,15 @@ const printArray = (arr) => {
     }
 }
 
-printArray(testArr);
+// printArray(testArr);
+
+const value_Position = arr => {
+    let newArr = []
+    for (let i = 0; i < arr.length; i++){
+        var product = arr[i] * i;
+        newArr.push(product)
+    }
+    return newArr
+}
+
+console.log(value_Position(testArr));
