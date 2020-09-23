@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 880px;
+    height: 500px;
+    margin: 5% auto;
+    background-color: black;
+}
+.cats {
+    margin: 3px 4px;
+}
+
+div > #cat {
+    height: 180px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+}
+#cat img {
+    margin: 0 auto;
+}
+img{
+height: 180px;
+width: 200px;
+}
+
+.container  button{
+    margin: 10px auto;
+    background-color: green;
+    color:black;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: 2px solid lightgray;
+}
+
