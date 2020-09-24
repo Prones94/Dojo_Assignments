@@ -1,0 +1,72 @@
+body {
+    padding: 10px;
+}
+
+h1 {
+    background-color: #B3B3B3;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+#explanation {
+    background-color: #CCCCCC;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+#desktop, #tablet, #phone {
+    background-color: #FFFF9A;
+    height: 40px;
+    padding: 10px;
+    width: 100vw;
+    border: 1px solid gray;
+}
+
+
+@media only screen and (min-width: 1024px){
+    #tablet {
+        display: none;
+    }
+    #phone {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    #desktop {
+        display: none;
+    }
+    #tablet {
+        display: inline-block;
+    }
+    #phone {
+        display: none;
+    }
+})
+@media only screen and (min-width: 481px){
+    #desktop {
+        display: none;
+    }
+    #table {
+        display: inline-block;
+    }
+    #phone {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #desktop {
+        display: none;
+    }
+    #tablet {
+        display: none;
+    }
+
+    #phone {
+        display: inline-block;
+    }
+    
+}
