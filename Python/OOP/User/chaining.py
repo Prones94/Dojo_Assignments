@@ -35,6 +35,5 @@ megan.make_deposit(500).make_deposit(300).make_withdrawal(200).display_user_bala
 rediet.make_deposit(300).make_withdrawal(50).make_withdrawal(10).make_withdrawal(100).display_user_balance()
 
 # BONUS: First User transfer $$$ to Third User
-charles.transfer_money(rediet, 100)
-charles.display_user_balance()
+charles.transfer_money(rediet, 100).display_user_balance()
 rediet.display_user_balance()
