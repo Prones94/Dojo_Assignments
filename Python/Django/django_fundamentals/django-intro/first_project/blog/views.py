@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse, redirect
+from django.http import JsonResponse
 
 def index(request):
     return HttpResponse("Placeholder to later display a list of all blogs")
@@ -17,3 +18,19 @@ def edit(request, number):
 
 def destroy(request,number):
     return redirect("/blogs/blogs/")
+
+def json(request):
+    usernames = [
+        {
+            'name': 'Ian Rones',
+            'username': '@ianrones',
+            'motto': 'Never give up. Never surrender!'
+        },
+        {
+            'name': 'Deadpool',
+            'username': '@deadlyunicorn',
+            'motto': 'I hate Wolverine!'
+        }
+    ]
+    
+    return JsonResponse({'usernames': usernames})
