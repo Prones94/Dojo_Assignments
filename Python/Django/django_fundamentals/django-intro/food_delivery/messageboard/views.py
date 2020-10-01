@@ -1,7 +1,14 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 def home(request):
-    return HttpResponse("Message Board is working ")
+    context = {
+        'name': 'Ian Rones',
+        'color': 'Teal',
+        'pets': 'DJ',
+        'jobs': ["Bartender", "Server", "Developer", "Designer"]
+
+    }
+    return render(request, "index.html", context)
 
 def cart(request):
-    return HttpResponse('This is the cart from Message Board App')
+    return render(request, "cart.html")

@@ -1,0 +1,11 @@
+h1 {
+    color: blue;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    color: red;
+}
