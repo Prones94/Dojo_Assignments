@@ -10,7 +10,7 @@ class Singly_Linked_List:
     def add_to_front(self, val):
         new_node = Node(val)
         current_head = self.head
-        node.next = current_head
+        new_node.next = current_head
         self.head = new_node
         return self
     
