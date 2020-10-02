@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Index Page</h1>
+        <h3>Create a User</h3>
+        <form action="/users" method="post">
+            {% csrf_token %}
+            <p>Name: <input type='text' name='name'></p>
+            <p>Email: <input type='text' name='email'></p>
+            <button type="submit">SUBMIT!!!!!</button>
+        </form>
+    </div>
+</body>
+</html>

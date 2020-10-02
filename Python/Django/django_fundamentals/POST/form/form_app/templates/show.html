@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Show Page</h1>
+        <h3>Info Submitted:</h3>
+            <ul>
+                <li>Name: {{name}}</li>
+                <li>Email: {{email}}</li>
+            </ul>
+
+    </div>
+</body>
+</html>
