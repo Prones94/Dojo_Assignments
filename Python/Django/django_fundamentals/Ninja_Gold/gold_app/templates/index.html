@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Gold</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Ninja Gold Homepage</h1>
+    <div class="container">
+        <div class="card">
+            <h2 class="title">Farm</h2>
+            <p>Earn 10-20 Gold</p>
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="form">
+                <form action="/process" method="POST" name='farm'>
+                    {% csrf_token %}
+                    <input type="hidden" name="options" value="farm">
+                    <button class="form-button" type="submit">Find Gold!</button>
+                </form>
+            </div>
+          </div>
+          <div class="card">
+            <h2 class="title">Cave</h2>
+            <p>Earn 5-10 Gold</p>
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="form">
+                <form action="process" method="POST" name='cave'>
+                    {% csrf_token %}
+                    <input type="hidden" name="options" value="cave">
+                    <button class="form-button" type="submit">Find Gold!</button>
+                </form>
+            </div>
+          </div>
+          <div class="card">
+            <h2 class="title">House</h2>
+            <p>Earn 2-5 Gold</p>
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="form">
+                <form action="/process" method="POST" name='house'>
+                    {% csrf_token %}
+                    <input type="hidden" name="options" value="house">
+                    <button class="form-button" type="submit">Find Gold!</button>
+                </form>
+            </div>
+          </div>
+          <div class="card">
+            <h2 class="title">Casino</h2>
+            <p>Earn/Take 0-50 Gold</p>
+            <div class="bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div class="form">
+              <form action="/process" method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="options" value="casino">
+                <button class="form-button" type="submit">Find Gold!</button>
+            </form>
+            </div>
+          </div>
+    </div>
+    <div class="side">
+        <p id="total_gold">Total Gold: 
+            <span>
+                {% if request.session.money == 0  %} 
+                    0
+                {% else %}
+                    {{request.session.money}}
+                {% endif %}
+            </span> 
+        </p>
+    </div>
+    <div class="activities">
+        <h1>Activity Log</h1>
+            {% for activity in request.session.activities %}
+                <p>{{ activity }}</p>
+            {% endfor %}
+    </div>
+</body>
+</html>
