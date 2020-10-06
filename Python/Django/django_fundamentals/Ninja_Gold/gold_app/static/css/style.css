@@ -20,7 +20,6 @@ p {
     top: 450px;
     width: 100%;
     height: 250px;
-    outline: 2px solid white;
 }
 
 body {
@@ -114,3 +113,18 @@ body {
     left: 50px;
 }
 
+.list-view {
+  margin: 2px;
+  display: flex;
+  width: 90%;
+  margin: 3px auto;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+  color: rgb(201, 201, 201);
+  list-style-type: none;
+  margin: 2px 0;
+}

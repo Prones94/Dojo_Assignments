@@ -80,13 +80,16 @@
                     {{request.session.money}}
                 {% endif %}
             </span> 
-        </p>
+            <button type="submit"><a href="/reset">Reset</a></button>
+          </p>
     </div>
     <div class="activities">
         <h1>Activity Log</h1>
-            {% for activity in request.session.activities %}
-                <p>{{ activity }}</p>
-            {% endfor %}
+        <ul class="list-view">
+          {% for activity in request.session.activities %}
+              <li>{{ activity }}</li>
+          {% endfor %}
+        </ul>
     </div>
 </body>
 </html>
