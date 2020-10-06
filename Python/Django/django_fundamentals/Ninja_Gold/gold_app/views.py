@@ -8,9 +8,6 @@ def index(request):
         request.session['money'] = 0
     if 'activities' not in request.session:
         request.session['activities'] = []
-    # context = {
-    #     'activities' : request.session['activities'],
-    # }
     return render(request, "index.html")
 
 
@@ -37,8 +34,8 @@ def process(request):
         if money > 0:
             string = "Earned " + str(money) + " gold gambling! " + "(" + str(datetime.now()) + ")\n"
         else:
-            
-            string = "Lost " + str(money) + " gold gambling! " + "(" + str(datetime.now()) + ")\n"
+            string = "Lost " + str(money*-1) + " gold gambling! " + "(" + str(datetime.now()) + ")\n"
+
         print('Las Vegas')
     request.session['activities'].append(string)
     request.session.save()

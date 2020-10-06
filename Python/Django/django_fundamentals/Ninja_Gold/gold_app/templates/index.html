@@ -80,14 +80,20 @@
                     {{request.session.money}}
                 {% endif %}
             </span> 
-            <button type="submit"><a href="/reset">Reset</a></button>
-          </p>
+        </p>
+        <div id="reset">
+          <button id="reset-button" type="submit"><a href="/reset">Reset</a></button>
+        </div>
     </div>
     <div class="activities">
         <h1>Activity Log</h1>
         <ul class="list-view">
           {% for activity in request.session.activities %}
-              <li>{{ activity }}</li>
+              {% if 'Lost' in activity%}
+                <li style="color: red;">{{activity}}</li>
+              {% else %}
+                <li style="color: green; align-self: flex-start;">{{activity}}</li>
+              {% endif %}
           {% endfor %}
         </ul>
     </div>
