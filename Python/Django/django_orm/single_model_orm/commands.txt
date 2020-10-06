@@ -1,0 +1,30 @@
+Query: Create 3 new users
+    user_one = User(first_name="Bill", last_name="Hammond",email_address="something@aol.com", age=43)
+    user_one.save()
+    user_two = User(first_name="Harmony", last_name="Song",email_address="songofhope@gmail.com", age=24)
+    user_two.save()
+    user_three = User(first_name="Luke", last_name="Skywalker",email_address="skywalkers@yahoo.com", age=37)
+    user_three.save()
+
+Query: Retrieve the last user (user_three)
+    User.objects.last()
+
+Query: Retrieve the first user (user_one)
+    User.objects.first()
+
+Query: Change the user with id=3 so their last name is Pancakes
+    user_change_name = User.objects.get(id=3)
+    user_change_name.last_name = "Pancakes"
+    user_change_name.save()
+
+Query: Delete the user with id=2 from the database
+    harmony = User.objects.get(id=2)
+    harmony.delete()
+
+Query: Get all the users, sorted by their first name
+    users = User.objects.all()
+    users.order_by("first_name")
+
+Bonus: Get all the users, sort them by first name in descending order_by
+    users = User.objects.all()
+    users.order-by("-first_name")
