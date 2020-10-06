@@ -19,7 +19,7 @@
         {% if request.session.result == 'Too Small' %}
             <div class="guess-box wrong">{{request.session.result}}</div>
         {% endif %}
-        {% if request.session.result == Bingo %}
+        {% if request.session.result == 'Bingo' %}
             <div class="guess-box correct">
                 <h2>{{request.session.result}}</h2>
                 <form action="/reset">
