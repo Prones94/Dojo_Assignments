@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Templates</title>
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>The Good Place</h1>
+    </header>
+    <div class="container">
+        <section class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for person in members%}
+                    <tr>
+                        <th>{{ person.id }}</th>
+                        <td>{{person.first_name}} {{person.last_name}}</td>
+                        <td>{{person.email}}</td>
+                        <td>{{person.age}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <section class="form">
+            <h1>Add A Member</h1>
+            <form action="/add" method="post">
+                {% csrf_token %}
+                <fieldset>
+                    <legend>Add a Cast Member</legend>
+                    <p><input type="text" name="fname" id="fname-input" required placeholder="First Name">
+                        <input type="text" name="lname" id="lname-input" placeholder="Last Name"></p>
+                    <p><input type="text" name="email" id="email-input" placeholder="email@here.com" required>  
+                        <input type="text" name="age" id="age-input" required placeholder="Age Here...."></p>
+                    <button id="form-button" type="submit">Add Cast</button>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <small>Copyright &#169; Ian Rones - Coding Dojo 2020</small>
+    </footer>
+</body>
+</html>
