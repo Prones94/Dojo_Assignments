@@ -1,0 +1,79 @@
+Query: Run shell and import models
+    python3 manage.py shell
+    >>> from dojo_app.models import * (or Dojo, Ninja)
+
+
+Query: Create 3 New Dojos
+    dojo_one = Dojo.objects.create(
+        name="Seattle",
+        city="Bellevue",
+        state = "WA"
+    )
+    dojo_two = Dojo.objects.create(
+        name="Bay Area",
+        city="Oakland",
+        state = "CA"
+    )
+    dojo_one = Dojo.objects.create(
+        name="SoCal",
+        city="Los Angeles",
+        state = "CA"
+    )
+
+Query: Delete the 3 Current Dojos
+    all_dojos = Dojo.objects.all()
+    all_dojos.delete()
+
+Query: Create 3 More Dojos
+    dojo_four = Dojo.objects.create(
+        name="San Jo",
+        city="San Jose",
+        state = "CA"
+    )
+    dojo_five = Dojo.objects.create(
+        name="Texas",
+        city="Dallas",
+        state = "TX"
+    )
+    dojo_six = Dojo.objects.create(
+        name="Silicon",
+        city="Silicon Valley",
+        state = "CA"
+    )
+
+Query: Create 3 ninjas connected to the first dojo (dojo_one)
+    luke = Ninja.objects.create(dojo_id =dojo_one, first_name="Luke", last_name="Paul")
+    john = Ninja.objects.create(dojo_id =dojo_one, first_name="John", last_name="Mitz")
+    mary = Ninja.objects.create(dojo_id =dojo_one, first_name="Mary", last_name="Leedin")
+
+Query: Create 3 ninjas connected to the second dojo (dojo_two)
+    jake = Ninja.objects.create(dojo_id=dojo_two, first_name="Jake", last_name="Ryan")
+    suzy = Ninja.objects.create(dojo_id=dojo_two, first_name="Suzy", last_name="Fong")
+    Larry = Ninja.objects.create(dojo_id=dojo_two, first_name="Larry", last_name="Fischer")
+
+Query: Create 3 ninjas connected to the third dojo (dojo_three)
+    fin = Ninja.objects.create(dojo_id=dojo_three, first_name="Fin", last_name="Huck")
+    tom = Ninja.objects.create(dojo_id=dojo_three, first_name="Tom", last_name="Sawyer")
+    grace = Ninja.objects.create(dojo_id=dojo_three, first_name="Grace", last_name="Hopper")
+
+Query: Retrieve all the ninjas from the first dojo
+    first_ninjas = Dojo.object.first().all().values()
+
+Query: Retrieve all the ninjas from the last dojo
+    last_ninjas = Dojo.objects.last().all().values()
+
+Query: Retrive the last ninja's dojo
+    Ninja.objects.last().dojo_id.__dict__
+
+Query: Add a new text field called 'desc' to your Dojo Class
+
+    - models.py
+        - Create a new text field called 'desc' with a textfield
+    - in project terminal
+        - run python3 manage.py makemigrations
+            Choose either option 1 or 2
+        - run python3 manage.py migrate
+    
+Query: Create a new dojo
+lasvegas = Dojo.objects.create(name="New Dojo", city="Las Vegas", state="NV", desc='Dusty, but new')
+
