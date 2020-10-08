@@ -1,13 +1,56 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dojo & Ninjas</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-    <h1>Home Page</h1>
+    <div class="wrapper-container">
+        <div class="form-container">
+            <section class="dojo-form">
+                <h2>Add a Dojo</h2>
+                <form action="/add-dojo" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="dojo-form" value="dojo">
+                    <p>Name: <input type="text" name="name"></p>
+                    <p>City: <input type="text" name="city"></p>
+                    <p>State: <input type="text" name="state"></p>
+                    <button type="submit">Add Dojo</button>
+                </form>
+            </section>
+            <section class="ninja-form">
+                <h2>Add a Ninja</h2>
+                <form action="/add-ninja" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="ninja-form" value="ninja">
+                    <p>First Name: <input type="text" name="fname"></p>
+                    <p>Last Name: <input type="text" name="lname"></p>
+                    <p>Dojo <select name="dojo-name">
+                        <option value="" disabled selected>Select Dojo</option>
+                        {% for dojo in all_dojos %}
+                        <option value={{dojo.id}} aria-placeholder="Choose your Dojo">{{dojo.name}}</option>
+                        {% endfor %}
+                    </select></p>
+                    <button type="submit">Add Ninja</button>
+                </form>
+            </section>
+        </div>
+        <hr>
+        <section class="all-info">
+            <h2>All the Dojos</h2>
+            {% for dojo in all_dojos %}
+            <ul>
+                <h3>{{dojo.name}} <button><a href="/delete">Delete</a></button></h3>
+                <h4>Ninjas at the {{dojo.name}} -> {{dojo.ninjas.all|length}}</h4>
+                    {% for ninja in dojo.ninjas.all %}
+                        <li>{{ninja.first_name}} {{ninja.last_name}}</li>
+                    {% endfor %}
+                </ul>
+                {% endfor %}
+        </section>
+    </div>
 </body>
 </html>

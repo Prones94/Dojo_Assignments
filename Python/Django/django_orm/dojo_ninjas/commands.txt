@@ -41,20 +41,20 @@ Query: Create 3 More Dojos
         state = "CA"
     )
 
-Query: Create 3 ninjas connected to the first dojo (dojo_one)
-    luke = Ninja.objects.create(dojo_id =dojo_one, first_name="Luke", last_name="Paul")
-    john = Ninja.objects.create(dojo_id =dojo_one, first_name="John", last_name="Mitz")
-    mary = Ninja.objects.create(dojo_id =dojo_one, first_name="Mary", last_name="Leedin")
+Query: Create 3 ninjas connected to the first dojo (dallasDojo)
+    luke = Ninja.objects.create(dojo_id =dallasDojo, first_name="Luke", last_name="Paul")
+    john = Ninja.objects.create(dojo_id =dallasDojo, first_name="John", last_name="Mitz")
+    mary = Ninja.objects.create(dojo_id =dallasDojo, first_name="Mary", last_name="Leedin")
 
-Query: Create 3 ninjas connected to the second dojo (dojo_two)
-    jake = Ninja.objects.create(dojo_id=dojo_two, first_name="Jake", last_name="Ryan")
-    suzy = Ninja.objects.create(dojo_id=dojo_two, first_name="Suzy", last_name="Fong")
-    Larry = Ninja.objects.create(dojo_id=dojo_two, first_name="Larry", last_name="Fischer")
+Query: Create 3 ninjas connected to the second dojo (sjDojo)
+    jake = Ninja.objects.create(dojo_id=sjDojo, first_name="Jake", last_name="Ryan")
+    suzy = Ninja.objects.create(dojo_id=sjDojo, first_name="Suzy", last_name="Fong")
+    Larry = Ninja.objects.create(dojo_id=sjDojo, first_name="Larry", last_name="Fischer")
 
-Query: Create 3 ninjas connected to the third dojo (dojo_three)
-    fin = Ninja.objects.create(dojo_id=dojo_three, first_name="Fin", last_name="Huck")
-    tom = Ninja.objects.create(dojo_id=dojo_three, first_name="Tom", last_name="Sawyer")
-    grace = Ninja.objects.create(dojo_id=dojo_three, first_name="Grace", last_name="Hopper")
+Query: Create 3 ninjas connected to the third dojo (washingtondojo)
+    fin = Ninja.objects.create(dojo_id=washingtondojo, first_name="Fin", last_name="Huck")
+    tom = Ninja.objects.create(dojo_id=washingtondojo, first_name="Tom", last_name="Sawyer")
+    grace = Ninja.objects.create(dojo_id=washingtondojo, first_name="Grace", last_name="Hopper")
 
 Query: Retrieve all the ninjas from the first dojo
     first_ninjas = Dojo.object.first().all().values()
