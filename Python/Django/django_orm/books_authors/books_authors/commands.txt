@@ -1,0 +1,90 @@
+Shell Commands for Books and Authors
+
+Query: Crete 5 books with the following names: C Sharp, Java, Python, PHP, Ruby
+
+    csharp = Book.objects.create(title="C Sharp")
+    java = Book.objects.create(title="Java")
+    python = Book.objects.create(title="Python")
+    php = Book.objects.create(title="PHP")
+    ruby = Book.objects.create(title="Ruby")
+
+Query: Create 5 different authors: Jane Austen, Emily Dickinson, Fyodor Dostoevsky, William Shakespeare, Lau Tzu
+
+    jane = Author.objects.create(first_name="Jane", last_name="Austen")
+    emily = Author.objects.create(first_name="Emily", last_name="Dickinson")
+    fyodor = Author.objects.create(first_name="Fyodor", last_name="Dostoevsky")
+    william = Author.objects.create(first_name="William", last_name="Shakespeare")
+    lau = Author.objects.create(first_name="Lau", last_name="Tzu")
+
+Query: Change the name of the C Sharp book to C#
+
+    csharp = Book.objects.get(id=1)
+    csharp.title = "C#"
+    csharp.save()
+
+Query: Change the first name of the 4th author to Bill
+
+    william = Author.objects.get(id=4)
+    willaim.first_name = "Bill"
+    william.save()
+
+Query: Assign the first author to the first two books
+
+    csharp = Book.objects.get(id=1)
+    java = Book.objects.get(id=2)
+    jane = Author.objects.get(id=1)
+    jane.books.add(csharp)
+    java.publishers.add(jane)
+    jane.save()
+    java.save()
+
+Query; Assign the second author to the first 3 books
+
+    emily = Author.objects.get(id=2)
+    python = Book.objects.get(id=3)
+    emily.books.add(csharp)
+    emily.books.add(java)
+    emily.books.add(python)
+    emily.save()
+
+Query: Assign the thrid author to the first 4 books
+
+    fyodor = Author.objects.get(id=3)
+    php = Book.objects.get(id=4)
+    fyodor.books.add(csharp)
+    fyodor.books.add(java)
+    fyodor.books.add(python)
+    fyoor.books.add(php)
+    fyodor.save()
+
+Query: Assign the fourth author to the first 5 books (or in other words, all the books)
+    
+    for book in Book.objects.all():
+        william.books.add(book)
+    william.save()
+
+Query: Retrieve all the authors for the 3rd book
+    
+    python.publishers.all().values()
+
+
+Query; Remove the first author of the 3rd book
+
+    python.publishers,remove(python.publishers.first())
+    python.save()
+
+Query: Add the 5th author as one of the authors of the 2nd book
+
+    java.publishers.add(lau)
+    java.save()
+
+Query: Find all the books that the 3rd author is part of
+
+    for book in python.publishers.books.all():
+        print(book.title)
+
+Query; Find all the authors that contributed to the 5th book
+
+    for author in ruby.publishers.all():
+        print(f"{author.first_name} {author.last_name})
+
