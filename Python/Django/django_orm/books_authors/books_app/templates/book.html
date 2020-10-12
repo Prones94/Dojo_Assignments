@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language</title>
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ book.title }}</h1>
+        <h3>Id: {{ book.title }}</h3>
+        <p><strong>Description:</strong>{{ book.desc }}</p>
+    
+        <p><strong>Authors:</strong></p>
+        <ul>
+            {% for author in book.publishers.all %}
+                <li>{{ author.first_name }} {{ author.last_name }}</li>
+            {% endfor %}
+        </ul>
+        <form action="/authors/create" method="post">
+            <input type="hidden" name="book_id" value="{{ book.id }}">
+            <select name="author_id" id="authors" aria-placeholder="Add an Author...">
+                {% for author in all_authors %}
+                    {% if author not in book.publishers.all %}
+                        <option value={{author.id}}>{{author.first_name}} {{author.last_name}}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+            <button type="submit">Add Author</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -9,8 +9,39 @@
 </head>
 <body>
     <div class="container">
-        <h1>Books and Authors</h1>
-        <p>Homepage</p>
+        <header>
+            <h1>Books and Authors</h1>
+            <p>Homepage</p>
+        </header>
+        <section class="form-section">
+            <form action="/books/create" method="post">
+                {% csrf_token %}
+                <h2>Add a Book</h2>
+                <p>Title: <input type="text" name="title" id="title-input"></p>
+                <p>Description <textarea name="description" id="desc-input"></p>
+            </form>
+            <button type="submit">Add Book</button>
+        </section>
+        <section class="list-books">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for book in all_books %}
+                    <tr>
+                        <td>{{ book.id }}</td>
+                        <td>{{ book.title }}</td>
+                        <td><a href="#">View</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
     </div>
 </body>
 </html>

@@ -1,7 +1,15 @@
 from django.db import models
 
 class Book(models.Model):
-    pass
+    title = models.CharField(max_length=255)
+    description = models.TextField()
+    # publishers = models.ManyToManyField(Author, related_name="authors")
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now = True)
 
 class Author(models.Model):
-    pass
+    first_name = models.CharField(max_length = 255)
+    last_name = models.CharField(max_length=255)
+    books = models.ManyToManyField(Book, related_name = "publishers")
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
