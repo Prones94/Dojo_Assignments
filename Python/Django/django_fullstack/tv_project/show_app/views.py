@@ -24,7 +24,7 @@ def create_show(request):
         )
         return redirect(f"/shows/{new_show.id}")
  
-def show(request, show_id):2
+def show(request, show_id):
     context = {
         "all_shows" : Shows.objects.all()
     }
