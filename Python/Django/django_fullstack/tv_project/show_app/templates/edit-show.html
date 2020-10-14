@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Show Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+    <h1>Edit Show</h1>
+    <form action="/shows/{{show.id}}/update" method="post">
+        {% csrf_token %}
+        <label for="title">Title</label>
+        <input required type="text" name="title">
+        <div class="side-by-side">
+            <label for="network">Network</label>
+            <input 
+                required 
+                type="text" 
+                name="network"
+                minlength="5"
+                maxlength="14"
+                size="10"
+            >
+            <label for="date">Release Date</label>
+            <input 
+                type="date" 
+                name="date" 
+                value="1999-01-01"
+            >
+        </div>
+        <label for="description">Description</label>
+        <textarea name="description" id="" cols="30" rows="10"></textarea>
+        <button type="submit">Update Show</button> 
+    </form>
+</body>
+</html>
