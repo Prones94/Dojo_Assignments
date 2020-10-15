@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+</head>
+<body>
+    <h1>Welcome Page</h1>
+    <form action="/register" method="post">
+        {%csrf_token%}
+        <fieldset>
+            <legend>Register</legend>
+            <div class="first_name">
+                <label for="fname">First Name</label>
+                <input type="text" name="first_name" placeholder="Mary">
+            </div>
+            <div class="last_name">
+                <label for="lname">Last Name</label>
+                <input type="text" name="last_name" placeholder="Jane">
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="something@something.com">
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" name="password">
+            </div>
+            <div class="confirm-password">
+                <label for="pw_confirm">Re-enter Password</label>
+                <input type="password" name="pw_confirm">
+            </div>
+            <button type="submit">Register Now</button>
+        </fieldset>
+    </form>
+    <form action="/login" method="post">
+        {% csrf_token %}
+        <legend>Login</legend>
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="something@something.com">
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input type="password" name="password">
+            </div>
+            <button type="submit">Login Now</button>
+        </fieldset>
+    </form>
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li style="color: red;">
+                    {{ messages }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
