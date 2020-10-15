@@ -8,6 +8,7 @@ def index(request):
 
 def view_dashboard(request):
     if 'uuid' not in request.session:
+        messages.error(request, "Mustt validate to view user page")
         return redirect('/')
     context = {
         "user" : User.objects.get(id=request.session['uuid'])
