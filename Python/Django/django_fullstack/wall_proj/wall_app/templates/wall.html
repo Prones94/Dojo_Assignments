@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wall</title>
+</head>
+<body>
+    <header style="display: flex; ">
+        <h3>The Wall!!!!!!</h3>
+        <p>Welcome {{user.first_name}}</p>
+        <a href="/logout">Logout</a>
+    </header>
+    <div class="main">
+        <form action="/message" method="post">
+        {% csrf_token %}
+        <h3>Post a message</h3>
+        <textarea name="new_msg" cols="100" rows="10"></textarea>
+        <br>
+        <button type="submit">Post Message</button>
+        </form>
+        {% for msg in messages reversed %}
+            <div class="all-messages">
+            <p>{{msg.user.first_name}} {{msg.user.last_name}} - {{msg.created_at}}</p>
+            <p>{{msg.message}}</p>
+            </div>
+            <div class="all-comments">
+                {% for comment in msg.comments.all%}
+                <p>
+                    {{comment.user.first_name}} {{comment.user.last_name}} - {{comment.created_at}}
+                    {% if user.id == comment.user.id %}
+                    <a href="/comment/{{comment.id}}/delete">Delete comment</a>
+                    {% endif%}
+                </p>
+                <p>{{comment.comment}}</p>
+                {% endfor %}
+            </div>
+            <form action="/comment" method="post">
+                {% csrf_token %}
+                <h4>Post a comment</h4>
+                <input type="hidden" name="msg_id" value="{{msg.id}}">
+                <textarea name="new_comment" cols="50" rows="10"></textarea>
+                <br>
+                <button type="submit">Add Comment</button>
+            </form>
+            {% endfor %}
+    </div>
+</body>
+</html>
