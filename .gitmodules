@@ -1,3 +1,6 @@
 [submodule "Python/Fundamentals/Loops/Basics_I/Github/fork/git_demo"]
 	path = Python/Fundamentals/Loops/Basics_I/Github/fork/git_demo
 	url = https://github.com/Prones94/Dojo_Assignments.git
+[submodule "Python/Django/django_orm/Python/Django/django_orm/sports_orm"]
+	path = Python/Django/django_orm/Python/Django/django_orm/sports_orm
+	url = https://github.com/Prones94/Dojo_Assignments.git
