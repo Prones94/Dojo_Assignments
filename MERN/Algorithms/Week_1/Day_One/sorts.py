@@ -34,3 +34,57 @@ def insertion_sort(nums):
             nums[i], nums[i-1] = nums[i-1], nums[i]
             i -= 1
     return nums
+
+# Merge Sort 
+# Step 1: Split the list 
+def split(arr):
+    """
+    :param arr:list
+    :return left and right lists [left] [right]
+    """
+    arr_length = len(arr)
+    middle = arr_length //2
+    return arr[:middle], arr[middle:]
+
+# Step 2: Merge sorted lists
+def merge_sorted_list(left, right):
+    """
+    Linear operation
+    O(len(left) + len(right))
+    :param left: list
+    :param right: list
+    return merged list
+    """
+    # Special: One or both lists are empty
+    if len(left) == 0:
+        return right
+    elif len(right) == 0:
+        return left
+
+    # General Case:
+    left_idx = right_idx = 0
+    merged = [] 
+    total_length = len(left) + len(right)
+    while len(merged) < total_length:
+        if left[left_idx] <= right[right_idx]: # Value on the left list is smaller (or equal)
+            merged.append(left[left_idx])
+            left_idx += 1
+        else: # Right value is bigger
+            merged.append(right[right_idx]) 
+            right_idx += 1
+        if right_idx == len(right):
+            merged += left[left_idx:]
+            break
+        elif left_idx == len(left):
+            merged += right[right_idx:]
+            break
+    return merged
+
+# Step 3 Merge Sort
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        left, right = split(arr)
+        return merge_sorted_list(merge_sort(left), merge_sort(right))
+        
