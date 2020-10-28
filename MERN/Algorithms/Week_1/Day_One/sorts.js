@@ -33,3 +33,68 @@ const selectionSort = arr => {
     }
     return arr
 }
+
+const insertionSort = nums => {
+    let inserts, position; // declare variables
+    for (i = 1; i < nums.length; i++){ 
+        inserts = nums[i] // starting pointer
+        position = i // this is for the index to the left of the pointer
+        while (position >= 0 && nums[position] > inserts){ // we inclue j >= 0 to include negative indexing, checks if value at i is greater than starting pointer
+            arr[position] = arr[position-1]
+            position--;
+        }
+        nums[position] = inserts
+    }
+    return nums
+}
+const insertionSortWithBinary = arr => {
+    let insertionIndex, insertee, i, j;
+    for (i = 1; i < arr.length;i++){
+        insertee = arr[i]
+        insertionIndex = insertionSearch(insertee, i)
+        for (j = i; j > insertionIndex; j--){
+            arr[j] = arr[j-1]
+        }
+        arr[insertionIndex] = insertee
+    }
+    return arr
+}
+function insertionSearch(insertee, upperbound){
+    let lowerbound, searchIndex;
+    lowerbound -= 1
+    while (upperbound - lowerbound > 1){
+        searchIndex = Math.floor((lowerbound + upperbound) / 2)
+        arr[searchIndex] <= insertee ? lowerbound = searchIndex : upperbound = searchIndex
+    }
+    return upperbound
+}
+
+const merge = (left, right) => {
+    let result, rightIndex, leftIndex;
+    result = [];
+    for (leftIndex = rightIndex = 0; leftIndex < left.length && rightIndex < right.length; ) {
+      if (left[leftIndex] < right[rightIndex]){
+        result.push(left[leftIndex]);
+        leftIndex++;
+      } else {
+        result.push(right[rightIndex]);
+        rightIndex++;
+      }
+    }
+    for(; leftIndex < left.length; leftIndex++){
+        result.push(left[leftIndex]);
+    }
+    for (; rightIndex < right.length; rightIndex++){
+        result.push(right[rightIndex]);
+    }
+    return result;
+  }
+  
+  const mergeSortDos = arr => {
+    if (arr.length < 2) return arr;
+    let pivot = Math.floor(arr.length /2)
+    left = arr.slice(0, pivot)
+    right = arr.slice(pivot)
+    return merge(mergeSortDos(left), mergeSortDos(right))
+  }
+ 

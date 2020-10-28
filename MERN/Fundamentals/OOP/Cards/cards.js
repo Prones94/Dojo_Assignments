@@ -3,6 +3,7 @@ class Card {
         this.name = name
         this.cost = cost
     }
+    
 }
 
 class Unit extends Card {

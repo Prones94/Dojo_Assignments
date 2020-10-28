@@ -25,3 +25,12 @@ def selection_sort(items):
         
         items[min_value], items[i] = items[i], items[min_value]
     return items
+
+def insertion_sort(nums):
+    length = range(1, len(nums))
+    for i in length:
+        unsorted_value = nums[i]
+        while nums[i-1] > unsorted_value and i > 0:
+            nums[i], nums[i-1] = nums[i-1], nums[i]
+            i -= 1
+    return nums

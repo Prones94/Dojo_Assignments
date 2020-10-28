@@ -17,7 +17,7 @@
  var hello = 'world' // returns undefined
 
  // #2
-var needle = 'haystack'
+let needle = 'haystack'
 test() // returns magnet
 function test(){
     var needle = 'magnet';
@@ -25,7 +25,7 @@ function test(){
 }
 
 // #3
-var brendan = 'super cool'
+let brendan = 'super cool'
 function print(){
     brendan = 'only okay'
     console.log(brendand);
@@ -33,46 +33,46 @@ function print(){
 console.log(brendan); // returns super cool
 
 // #4
-var food = 'chicken'
+let food = 'chicken'
 console.log(food); // logs chicken first
 eat()
 function eat() {
-    food = 'half-chicken'
+    let food = 'half-chicken'
     console.log(food); //logs half-chicken, as food was already defined in the global scope
-    var food = 'gone'
+    food = 'gone'
 }
 
 // #5
-// mean(); // runs an error here, mean is called before it was defined
-// console.log(food);
-// var mean = function() {
-//     food = "chicken"
-//     console.log(food);
-//     var food = "fish"
-//     console.log(food);
-// }
-// console.log(food);
+console.log(food);
+const mean = function() {
+    let food = "chicken"
+    console.log(food);
+    food = "fish"
+    console.log(food);
+}
+mean(); 
+console.log(food);
 
 // #6
+let genre = 'disco' // disco is declared here
 console.log(genre); // calls undefined
-var genre = 'disco' // disco is declared here
-rewind() // logs rock, then r&b
-function rewind() {
+let rewind = function() {
     genre = "rock"
     console.log(genre); 
     var genre = "r&b"
     console.log(genre);
 }
+rewind() // logs rock, then r&b
 console.log(genre); // logs disco last
 
 // #7
-dojo = "san jose"
+let dojo = "san jose"
 console.log(dojo); // logs san jose first
 learn()
 function learn() {
-    dojo="seattle"
+    let dojo="seattle"
     console.log(dojo); // logs seattle next
-    var dojo="burbank"
+    dojo="burbank"
     console.log(dojo); // dojo is then reassigned to burbank
 }
 console.log(dojo); // logs san jose again due to dojo being declared in global scope already
@@ -87,7 +87,7 @@ function makeDojo(name, students) {
     if(dojo.students > 50){
         dojo.hiring = true
     } else if (dojo.students <= 0){
-        dojo = "closed for now";
+        dojo.name = "closed for now";
     }
     return dojo
 }
