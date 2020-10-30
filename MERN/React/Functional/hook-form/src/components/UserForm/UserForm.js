@@ -13,11 +13,15 @@ const UserForm = props => {
 
     return (
         <form>
-            <div className="form name">
-                <label htmlFor="firstName">First Name: </label>
-                <input type="text" name="firstName" onChange={onChange}/>
-                <label htmlFor="lastName">Last Name: </label>
-                <input type="text" name="lastName" onChange={onChange}/>
+            <div className="form names">
+                <div className="firstName">
+                    <label htmlFor="firstName">First Name: </label>
+                    <input type="text" name="firstName" onChange={onChange}/>
+                </div>
+                <div className="lastName">
+                    <label htmlFor="lastName">Last Name: </label>
+                    <input type="text" name="lastName" onChange={onChange}/>
+                </div>
             </div>
             <div className="form email">
                 <label htmlFor="email">Email: </label>
