@@ -1,0 +1,5 @@
+1. https://pokeapi.co/api/v2/pokemon/butterfree
+2. https://pokeapi.co/api/v2/pokemon-form/507
+3. https://pokeapi.co/api/v2/pokemon-form/50
+4. https://pokeapi.co/api/v2/pokemon/charizard
+5. https://pokeapi.co/api/v2/pokemon/199
