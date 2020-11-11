@@ -98,3 +98,41 @@ const merge = (left, right) => {
     return merge(mergeSortDos(left), mergeSortDos(right))
   }
  
+// const partition(nums=[], left=0, right=nums.length - 1){
+//     const middleIdx = Math.floor(left+right)/2
+//     const pivot = nums[middleIdx]
+//     while (left < right){
+//         while(nums[left]< pivot){
+//             left++
+//         }
+//         while(nums[right]> pivot){
+//             right++
+//         }
+//         [nums[left],nums[right]] = n[nums[right], nums[left]]
+//     }
+//     return left
+// }
+let swap = (arr, i, j) => {
+    let temp = arr[j]
+    arr[i], arr[j] = arr[j], temp
+}
+let partition = (arr,low, high) => {
+    let q = low = i;
+    for (; i < high; i++){
+        if(arr[i] < arr[high]){
+            swap(arr, i, q);
+            q++
+        }
+    }
+    swap(arr, i, q);
+    return q
+}
+
+const quickSort = (arr, low, high) => {
+    if (low < high){
+        let pivot = partition(arr, low, high);
+        quickSort(arr, low, pivot-1)
+        quickSort(arr, pivot+1, high)
+        return arr
+    }
+}

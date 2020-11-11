@@ -1,0 +1,101 @@
+Express + Mongoose
+
+Learning Objectives:
+    - Learning what Mongoose is
+    - Learning how to install mongoose with npm
+    - Learning how to connect mongoose to a database
+    - Learning how to create a Mongoose Schema and Model
+    - Learning how to execute basic queries with Mongoose objects
+    - Understanding the basic syntax for writing promises with Mongoose methods
+
+Mongoose
+    - Mongoose is a library.
+    - It simplifies making MongoDB queries with its own library of methods
+    - Can connect mongoose directly to a MongoDB database and it will allow us to give it
+      structure to our data with the addition of models and schemas
+    - Acts as a layer between our application and our database enabling things like
+      validations and run complex queries more effectively
+
+    STEPS
+    1. Installing Mongoose
+        npm init -y
+        npm install mongoose express
+    2. Require Mongoose
+        const mongoose = require ('mongoose')
+    3. Connecting to MongoDB with Mongoose
+        config/mongoose.config.js
+        mongoose.connect('mongodb://localhost/name_of_your_DB', {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        }).then(() => console.log('Established a connection to the database'))
+          .catch(err => console.log('Something went wrong when connecting to the database', err))
+    ** if a database doesn't exist, then Mongoose will create the DB for you as soon as you create
+      document
+    4. Create your Mongoose Schema and Model
+        Provides more structure to MongoDB by adding schemas that we can create that turn into models for our collections
+        These models specify keys, types, and validations for documents in a specific collections
+        Handles appropriate naming for us when it communicates with MongoDB
+
+        models/user.model.js
+        const mongooose = require("mongoose")
+
+
+        ** takes an object as a parameter
+        ** Structure of that object is how each new document put into the collection will be formatted
+        const UserSchema = new mongoose.Schema({
+            name: String,
+            age: Number
+        });
+
+        const User = mongoose.model("User", UserSchema);
+        ** mongoose.model takes a blueprint object and creates the necessary database collection out of the model.
+        ** Grab this blueprint by making a new [Schema!] from mongoose.Schema() object constructor
+        ** Create a User variable to export and and set it to be the value of mongoose.model which will effectively export a constructor function to create new user objects
+
+        ** Exporting the User variable will allow us to import and use the User constructor function in any file
+        module.exports = User;
+
+    5. Use the Mongoose Models to CREATE / RETRIEVE / UPDATE / DESTROY
+    controllers/user.controller.js => This houses all our logic for CRUD
+    ** Does NOT need require("mongoose")
+    ** USE require("../models/user.model") and import the User variable from user.model.js
+    const User = require("../models/user.model")
+
+    module.exports.findAllUsers = (req, res) => {
+        User.find()
+            .then(allUsers => res.json({ users: allUsers }))
+            .catch(err => res.json({ message: "Something went wrong", error: err}));
+    };
+
+    module.exports.findOneSingleUser = (req, res) => {
+        User.findOne({_id: req.params.id})
+            .then(oneSingleUser => res.json({ user: oneSingleUser }))
+            .catch(err => res.json({ message: "Something went wrong", error: err}));
+    };
+
+    module.exports.createNewUser = (req, res) => {
+        User.create(req.body)
+            .then(newlyCreatedUser => res.json({ user: newlyCreatedUser }))
+            .catch(err => res.json({ message: "Something went wrong", error: err})
+    }
+
+    module.exports.updateExistingUser = (req, res) => {
+        User.findOneandUpdate({_id: req.params.id }, req.body, {new:true})
+            .then(updatedUser => res.json({ user: updatedUser }))
+            .catch(err => res.json({ message: "Something went wrong", error: err}))
+    };
+
+    module.exports.deleteAnExistingUser = (req, res) => {
+        User.deleteONe({_id: req.params.id })
+            .then(result => res.json({ result : result }))
+            .catch(err => res.json({ message: "Something went wrong", error: err}))
+    };
+
+    ** User is a constructor function which can create new user objects and also has other methods
+    that will talk to the database
+        - the .then() will only execute upon successfully inserting data in the database
+        - the .catch() will execute only if there is an error
+
+
+
+

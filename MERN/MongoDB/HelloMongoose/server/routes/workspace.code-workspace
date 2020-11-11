@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "server",
+			"path": "../../../../../../../../Downloads/HelloMongoose/server"
+		},
+		{
+			"name": "HelloMongoose",
+			"path": "../.."
+		}
+	],
+	"settings": {}
+}

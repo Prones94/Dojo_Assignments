@@ -28,10 +28,14 @@ const UserForm = props => {
                 <input type="text" name="email" onChange={onChange}/>
             </div>
             <div className="form passwords">
-                <label htmlFor="password">Password: </label>
-                <input type="password" name="password" onChange={onChange}/>
+                <div className="password">
+                    <label htmlFor="password">Password: </label>
+                    <input type="password" name="password" onChange={onChange}/>
+                </div>
+                <div className="confirm">
                 <label htmlFor="confirmPassword">Confirm Password</label>
                 <input type="password" name="confirmPassword" onChange={onChange}/>
+                </div>
             </div>
         </form>
     );

@@ -1,0 +1,4 @@
+Common Mongoose Commands
+
+- Defining a User Schema
+//

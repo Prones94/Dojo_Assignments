@@ -29,9 +29,7 @@ function App() {
       <div className="tabHeader">
         {alltabs}
       </div>
-      <div className="tabContent">
-        {tabContent}
-      </div>
+      {tabContent}
     </div>
   );
 }

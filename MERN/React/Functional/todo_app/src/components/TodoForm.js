@@ -23,9 +23,6 @@ function TodoForm() {
     }, [todos])
 
     const markAllDone = useCallback(() => {
-        //create  copy of the array
-        //create a copyu of each of the items
-        //update the done property to be true on each of the new items
         const finishedTodos = todos.map(todo => {
             return {
                 ...todo,
