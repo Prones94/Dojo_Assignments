@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
-import { navigate } from '@reach/router'
+import ProductList from '../components/ProductList';
 
 const NewProduct = props => {
     const [title, setTitle] = useState("")
-    const [price, setPrice] = useState("")
+    const [price, setPrice] = useState(0)
     const [description, setDescription] = useState("")
+    const [products, setProducts ] = useState([])
     const [errors, setErrors] = useState(null)
 
     const handleSubmit = e => {
@@ -21,17 +22,17 @@ const NewProduct = props => {
         axios
             .post("http://localhost:8000/api/posts", newProduct)
             .then(res => {
-                navigate("/posts")
+                setProducts([...products, res.data])
             })
             .catch(err => {
-                console.log(err.response);
+                console.log(err);
                 setErrors(err.response.data?.errors)
             })
     }
 
     return (
         <div>
-            <form onSubmit={e => handleSubmit(e)}>
+            <form onSubmit={handleSubmit}>
                 <div className="title">
                     <label htmlFor="title">Title: </label>
                     <input type="text" name="title" onChange={e => setTitle(e.target.value)}/>
@@ -56,8 +57,10 @@ const NewProduct = props => {
                     )}
                 </div>
                 <br/>
-                <button type="submit">Submit</button>
+                <input type="submit" value="Create"/>
             </form>
+            <hr/>
+            <ProductList products={products} setProducts={setProducts} />
         </div>
     )
 }

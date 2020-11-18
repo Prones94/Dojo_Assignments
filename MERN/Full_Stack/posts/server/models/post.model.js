@@ -4,7 +4,7 @@ const PostSchema = new mongoose.Schema(
     {
         title: {
             type: String,
-            require: [true, "{PATH} is required"],
+            required: [true, "{PATH} is required"],
             minlength: [2, "{PATH} must be at least {MINLENGTH} characters"],
         },
         description: {

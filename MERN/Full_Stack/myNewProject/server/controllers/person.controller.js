@@ -15,3 +15,15 @@ module.exports.createPerson = (req, res) => {
     .then(person => res.json(person))
     .catch(err => res.json(err))
 }
+
+module.exports.getAllPeople = (req,res) => {
+    Person.find({})
+        .then(persons => res.json(person))
+        .catch(err => res.json(err))
+}
+
+module.exports.getPerson = (req, res) => {
+    Person.findOne({_id:request.params.id})
+        .then(person => res.json(person))
+        .catch(err => res.json(err))
+}

@@ -46,7 +46,7 @@ const SinglePost = props => {
     }
 
     return (
-        <div>/key={post._id}
+        <div key={post._id}>
             <div>
                 <h2>
                     <span>{post.likeCount}</span>

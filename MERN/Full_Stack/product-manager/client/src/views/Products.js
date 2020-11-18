@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import {navigate, Link} from "@reach/router"
-import NestedNewProduct from '../components/NestedNewProduct';
+import NewProduct from '../views/NewProduct';
 
 const Products = props => {
     const [products, setProducts] = useState(null)
@@ -42,7 +42,7 @@ const Products = props => {
             return (
                 <div key={product._id}>
                     {/* <div><NestedNewProduct products={products} setProducts={setProducts} /></div> */}
-                    <NestedNewProduct newProductCreated={newProductCreated} />
+                    <NewProduct newProductCreated={newProductCreated} />
                     <h1 onClick={e => navigate(`/product/${product._id}`)}>
                     {product.title}
                     </h1>
