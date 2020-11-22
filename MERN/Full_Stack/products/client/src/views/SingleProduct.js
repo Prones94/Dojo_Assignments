@@ -3,7 +3,7 @@ import axios from 'axios'
 import { navigate, Link } from '@reach/router'
 
 const SingleProduct = props => {
-    const [product, setProduct] = useState({})
+    const [product, setProduct] = useState([])
 
     useEffect(() => {
         axios.get(`http://localhost:8000/api/products/${product.id}`)

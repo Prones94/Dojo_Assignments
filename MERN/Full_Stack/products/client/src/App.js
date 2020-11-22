@@ -1,10 +1,8 @@
 import React from 'react'
 import './App.css';
 import { Router } from '@reach/router'
-
-import NewProduct from './views/NewProduct'
 import SingleProduct from './views/SingleProduct';
-import EditProduct from './views/EditProduct';
+import Main from './views/Main';
 
 
 
@@ -15,9 +13,8 @@ function App() {
         <h3>Product Manager</h3>
       </header>
       <Router>
-      <NewProduct path="/"/>
+      <Main path="/"/>
       <SingleProduct path="/:id" />
-      <EditProduct path="/:id/edit" />
       </Router>
     </div>
   );
