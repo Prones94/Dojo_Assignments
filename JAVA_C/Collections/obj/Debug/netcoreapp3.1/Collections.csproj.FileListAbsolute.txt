@@ -1,0 +1,12 @@
+/Users/admin/Desktop/Coding Dojo/BootCamp/JAVA_C/Collections/bin/Debug/netcoreapp3.1/Collections.deps.json
+/Users/admin/Desktop/Coding Dojo/BootCamp/JAVA_C/Collections/bin/Debug/netcoreapp3.1/Collections.runtimeconfig.json
+/Users/admin/Desktop/Coding Dojo/BootCamp/JAVA_C/Collections/bin/Debug/netcoreapp3.1/Collections.runtimeconfig.dev.json
+/Users/admin/Desktop/Coding Dojo/BootCamp/JAVA_C/Collections/bin/Debug/netcoreapp3.1/Collections.dll
+/Users/admin/Desktop/Coding Dojo/BootCamp/JAVA_C/Collections/bin/Debug/netcoreapp3.1/Collections.pdb
+/Users/admin/Desktop/Coding Dojo/BootCamp/JAVA_C/Collections/obj/Debug/netcoreapp3.1/Collections.csprojAssemblyReference.cache
+/Users/admin/Desktop/Coding Dojo/BootCamp/JAVA_C/Collections/obj/Debug/netcoreapp3.1/Collections.AssemblyInfoInputs.cache
+/Users/admin/Desktop/Coding Dojo/BootCamp/JAVA_C/Collections/obj/Debug/netcoreapp3.1/Collections.AssemblyInfo.cs
+/Users/admin/Desktop/Coding Dojo/BootCamp/JAVA_C/Collections/obj/Debug/netcoreapp3.1/Collections.csproj.CoreCompileInputs.cache
+/Users/admin/Desktop/Coding Dojo/BootCamp/JAVA_C/Collections/obj/Debug/netcoreapp3.1/Collections.dll
+/Users/admin/Desktop/Coding Dojo/BootCamp/JAVA_C/Collections/obj/Debug/netcoreapp3.1/Collections.pdb
+/Users/admin/Desktop/Coding Dojo/BootCamp/JAVA_C/Collections/obj/Debug/netcoreapp3.1/Collections.genruntimeconfig.cache
