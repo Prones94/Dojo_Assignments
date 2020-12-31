@@ -1,4 +1,5 @@
 const express = require('express')
+const dbName = "pe"
 const cors = require('cors')
 require('./config/mongoose.config')
 const app = express()

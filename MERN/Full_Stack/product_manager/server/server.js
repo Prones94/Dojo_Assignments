@@ -10,6 +10,6 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-require("./routes/product.models")(app)
+require("./routes/product.routes")(app)
 
 app.listen(port, () => console.log(`Listening on port ${port} for REQuests and RESponses`))
