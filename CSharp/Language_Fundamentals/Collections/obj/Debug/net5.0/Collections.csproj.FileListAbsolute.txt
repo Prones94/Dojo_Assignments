@@ -1,0 +1,15 @@
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/bin/Debug/net5.0/Collections.deps.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/bin/Debug/net5.0/Collections.runtimeconfig.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/bin/Debug/net5.0/Collections.runtimeconfig.dev.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/bin/Debug/net5.0/Collections.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/bin/Debug/net5.0/ref/Collections.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/bin/Debug/net5.0/Collections.pdb
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/obj/Debug/net5.0/Collections.csprojAssemblyReference.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/obj/Debug/net5.0/Collections.GeneratedMSBuildEditorConfig.editorconfig
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/obj/Debug/net5.0/Collections.AssemblyInfoInputs.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/obj/Debug/net5.0/Collections.AssemblyInfo.cs
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/obj/Debug/net5.0/Collections.csproj.CoreCompileInputs.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/obj/Debug/net5.0/Collections.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/obj/Debug/net5.0/ref/Collections.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/obj/Debug/net5.0/Collections.pdb
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Collections/obj/Debug/net5.0/Collections.genruntimeconfig.cache
