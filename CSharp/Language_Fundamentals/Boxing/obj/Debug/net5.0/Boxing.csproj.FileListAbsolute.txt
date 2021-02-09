@@ -1,0 +1,15 @@
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/bin/Debug/net5.0/Boxing.deps.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/bin/Debug/net5.0/Boxing.runtimeconfig.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/bin/Debug/net5.0/Boxing.runtimeconfig.dev.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/bin/Debug/net5.0/Boxing.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/bin/Debug/net5.0/ref/Boxing.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/bin/Debug/net5.0/Boxing.pdb
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/obj/Debug/net5.0/Boxing.csprojAssemblyReference.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/obj/Debug/net5.0/Boxing.GeneratedMSBuildEditorConfig.editorconfig
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/obj/Debug/net5.0/Boxing.AssemblyInfoInputs.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/obj/Debug/net5.0/Boxing.AssemblyInfo.cs
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/obj/Debug/net5.0/Boxing.csproj.CoreCompileInputs.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/obj/Debug/net5.0/Boxing.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/obj/Debug/net5.0/ref/Boxing.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/obj/Debug/net5.0/Boxing.pdb
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Boxing/obj/Debug/net5.0/Boxing.genruntimeconfig.cache

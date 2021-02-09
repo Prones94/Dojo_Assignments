@@ -1,0 +1,15 @@
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/bin/Debug/net5.0/Arrays.deps.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/bin/Debug/net5.0/Arrays.runtimeconfig.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/bin/Debug/net5.0/Arrays.runtimeconfig.dev.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/bin/Debug/net5.0/Arrays.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/bin/Debug/net5.0/ref/Arrays.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/bin/Debug/net5.0/Arrays.pdb
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/obj/Debug/net5.0/Arrays.csprojAssemblyReference.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/obj/Debug/net5.0/Arrays.GeneratedMSBuildEditorConfig.editorconfig
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/obj/Debug/net5.0/Arrays.AssemblyInfoInputs.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/obj/Debug/net5.0/Arrays.AssemblyInfo.cs
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/obj/Debug/net5.0/Arrays.csproj.CoreCompileInputs.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/obj/Debug/net5.0/Arrays.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/obj/Debug/net5.0/ref/Arrays.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/obj/Debug/net5.0/Arrays.pdb
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Arrays/obj/Debug/net5.0/Arrays.genruntimeconfig.cache
