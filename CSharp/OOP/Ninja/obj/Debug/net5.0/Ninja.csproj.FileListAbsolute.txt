@@ -1,0 +1,15 @@
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/bin/Debug/net5.0/Ninja.deps.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/bin/Debug/net5.0/Ninja.runtimeconfig.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/bin/Debug/net5.0/Ninja.runtimeconfig.dev.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/bin/Debug/net5.0/Ninja.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/bin/Debug/net5.0/ref/Ninja.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/bin/Debug/net5.0/Ninja.pdb
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/obj/Debug/net5.0/Ninja.csprojAssemblyReference.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/obj/Debug/net5.0/Ninja.GeneratedMSBuildEditorConfig.editorconfig
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/obj/Debug/net5.0/Ninja.AssemblyInfoInputs.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/obj/Debug/net5.0/Ninja.AssemblyInfo.cs
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/obj/Debug/net5.0/Ninja.csproj.CoreCompileInputs.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/obj/Debug/net5.0/Ninja.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/obj/Debug/net5.0/ref/Ninja.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/obj/Debug/net5.0/Ninja.pdb
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Ninja/obj/Debug/net5.0/Ninja.genruntimeconfig.cache
