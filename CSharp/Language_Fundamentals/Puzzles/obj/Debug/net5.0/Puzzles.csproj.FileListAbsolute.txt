@@ -1,0 +1,15 @@
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/obj/Debug/net5.0/Puzzles.csprojAssemblyReference.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/obj/Debug/net5.0/Puzzles.GeneratedMSBuildEditorConfig.editorconfig
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/obj/Debug/net5.0/Puzzles.AssemblyInfoInputs.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/obj/Debug/net5.0/Puzzles.AssemblyInfo.cs
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/obj/Debug/net5.0/Puzzles.csproj.CoreCompileInputs.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/bin/Debug/net5.0/Puzzles.deps.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/bin/Debug/net5.0/Puzzles.runtimeconfig.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/bin/Debug/net5.0/Puzzles.runtimeconfig.dev.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/bin/Debug/net5.0/Puzzles.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/bin/Debug/net5.0/ref/Puzzles.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/bin/Debug/net5.0/Puzzles.pdb
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/obj/Debug/net5.0/Puzzles.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/obj/Debug/net5.0/ref/Puzzles.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/obj/Debug/net5.0/Puzzles.pdb
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/Language_Fundamentals/Puzzles/obj/Debug/net5.0/Puzzles.genruntimeconfig.cache
