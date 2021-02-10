@@ -1,0 +1,15 @@
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/bin/Debug/net5.0/Construction.deps.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/bin/Debug/net5.0/Construction.runtimeconfig.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/bin/Debug/net5.0/Construction.runtimeconfig.dev.json
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/bin/Debug/net5.0/Construction.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/bin/Debug/net5.0/ref/Construction.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/bin/Debug/net5.0/Construction.pdb
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/obj/Debug/net5.0/Construction.csprojAssemblyReference.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/obj/Debug/net5.0/Construction.GeneratedMSBuildEditorConfig.editorconfig
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/obj/Debug/net5.0/Construction.AssemblyInfoInputs.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/obj/Debug/net5.0/Construction.AssemblyInfo.cs
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/obj/Debug/net5.0/Construction.csproj.CoreCompileInputs.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/obj/Debug/net5.0/Construction.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/obj/Debug/net5.0/ref/Construction.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/obj/Debug/net5.0/Construction.pdb
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/OOP/Construction/obj/Debug/net5.0/Construction.genruntimeconfig.cache
