@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Razor Fun</title>
+  <style>
+    .red {
+      color: red;
+    }
+    .push {
+      margin-left:20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1>Here are some delicious foods!</h1>
+  @{
+    var FoodList = new string[]{
+        "Apple Pie",
+        "Burritos",
+        "Clam Casino",
+        "Donuts",
+        "Clams",
+        "Cake",
+        "Oatmeal"
+    };
+      Array.Sort(FoodList); // Sorts the list into alphabetical Order
+      foreach(string food in FoodList)
+      {
+        if(food.StartsWith("C"))
+        {
+          <p class="red push">@food</p>
+        }
+        else
+        {
+          <p class="push">@food</p>
+        }
+      }
+  }
+
+  </div>
+</body>
+</html>
