@@ -15601,6 +15601,22 @@
     "CSharpLanguageVersion": 900
   },
   "RootNamespace": "Portfolio_I",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/Portfolio_I/Views/Project/Project.cshtml",
+      "TargetPath": "Views\\Project\\Project.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/Portfolio_I/Views/Hello/Hello.cshtml",
+      "TargetPath": "Views\\Hello\\Hello.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/Portfolio_I/Views/Index/Index.cshtml",
+      "TargetPath": "Views\\Index\\Index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

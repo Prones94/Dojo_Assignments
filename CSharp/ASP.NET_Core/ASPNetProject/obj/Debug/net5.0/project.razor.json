@@ -15601,6 +15601,12 @@
     "CSharpLanguageVersion": 900
   },
   "RootNamespace": "ASPNetProject",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/Views/Hello/index.cshtml",
+      "TargetPath": "Views\\Hello\\index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

@@ -20,3 +20,14 @@
 /Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/obj/Debug/net5.0/ref/ASPNetProject.dll
 /Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/obj/Debug/net5.0/ASPNetProject.pdb
 /Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/obj/Debug/net5.0/ASPNetProject.genruntimeconfig.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/obj/Debug/net5.0/ASPNetProject.RazorAssemblyInfo.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/obj/Debug/net5.0/ASPNetProject.RazorAssemblyInfo.cs
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/bin/Debug/net5.0/ASPNetProject.Views.dll
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/bin/Debug/net5.0/ASPNetProject.Views.pdb
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/obj/Debug/net5.0/ASPNetProject.TagHelpers.input.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/obj/Debug/net5.0/ASPNetProject.TagHelpers.output.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/obj/Debug/net5.0/ASPNetProject.RazorCoreGenerate.cache
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/obj/Debug/net5.0/Razor/Views/Hello/index.cshtml.g.cs
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/obj/Debug/net5.0/ASPNetProject.RazorTargetAssemblyInfo.cs
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/obj/Debug/net5.0/ASPNetProject.Views.pdb
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/ASPNetProject/obj/Debug/net5.0/ASPNetProject.csproj.CopyComplete

@@ -13,7 +13,7 @@ namespace ASPNetProject
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).Build().Run(); // chaining functions
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
