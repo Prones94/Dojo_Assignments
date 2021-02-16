@@ -6,19 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <link rel="stylesheet" href="~/css/projects.css">
-  <title>Document</title>
+  <title>Projects</title>
 </head>
 <body class="container__projects">
-  <div class="nav">
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">Projects</a></li>
-      <li><a href="">Contact</a></li>
-    </ul>
-  </div>
-  <div class="main__projects">
-      <h3>Here are some projects of mine!</h3>
-
-  </div>
+    <nav class="navbar is-fixed-top is-spaced is-black" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-menu ">
+        <div class="navbar-end">
+          <a class="navbar-item" href="/">Home</a>
+          <a href="/projects" class="navbar-item">Projects</a>
+          <a href="/contact" class="navbar-item">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="hero">
+            <div class="hero-body is-text-centered">
+              <p class="title">Projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section projects">
+    <div class="container">
+      <div class="column is-8 is-offset">
+        <div class="columns is-centered">
+          <div class="box">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="~/images/colors.png" alt="Color Picker">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content has-text-centered">
+                    <p class="title is-4">Color Picker</p>
+                    <p class="subtitle">HTML,CSS, JAVASCRIPT</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <p>This project helps early web developers and graphic designers to learn their rbg (red, green, blue) values using a game. The interface is very easy to use, and includes three levels of difficulty.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   </body>
 </html>

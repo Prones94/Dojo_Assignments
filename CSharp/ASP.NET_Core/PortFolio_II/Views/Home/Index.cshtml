@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +9,44 @@
   <link rel="stylesheet" href="~/css/style.css" />
   <title>Main</title>
 </head>
+
 <body class="container__home">
-  <div class="nav">
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">Projects</a></li>
-      <li><a href="">Contact</a></li>
-    </ul>
-  </div>
-  <h3>About Me</h3>
-  <div class="left">
-    <img class="pic" src="" alt="Profile Pic">
-    <h4>Ian Rones</h4>
-    <p>Hello All!</p>
+  <nav class="navbar is-fixed-top is-spaced is-black" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-menu ">
+        <div class="navbar-end">
+          <a class="navbar-item" href="/">Home</a>
+          <a href="/projects" class="navbar-item">Projects</a>
+          <a href="/contact" class="navbar-item">Contact</a>
+        </div>
+      </div>
     </div>
-  <div class="right">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eos, explicabo totam autem ipsum earum aliquam facilis illum minima odit ullam quo voluptatum natus temporibus veniam nemo iusto necessitatibus error?</p>
+  </nav>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="hero">
+            <div class="hero-body is-text-centered">
+              <p class="title">About Me</p>
+              <p class="subtitle">Ian Rones</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <section class="section">
+      <div class="columns is-flex is-vcentered is-centered">
+        <div class="column is-5 is-vcentered">
+          <img class="image is-128x128 is-centered" src="~/images/profile.jpeg" alt="Profile Pic">
+        </div>
+        <div class="column is-7">
+          <p>My name is Ian Rones. I am a Computer Science major finishing my senior year in college for my BS. I am a front-end engineer however I want to be fully versed in the back-end as well, letting me become a full-stack engineer</p>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 </html>

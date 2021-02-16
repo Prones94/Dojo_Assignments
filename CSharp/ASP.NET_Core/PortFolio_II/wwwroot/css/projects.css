@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 400px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image > img {
+  width: 300px;
+  overflow: hidden;
+}

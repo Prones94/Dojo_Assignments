@@ -7,37 +7,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <link rel="stylesheet" href="~/css/contact.css">
-  <title>Document</title>
+  <title>Contacts</title>
 </head>
 
 <body class="container__contacts">
-  <div class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
+  <nav class="navbar is-fixed-top is-spaced is-black" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-menu ">
+        <div class="navbar-end">
+          <a class="navbar-item" href="/">Home</a>
+          <a href="/projects" class="navbar-item">Projects</a>
+          <a href="/contact" class="navbar-item">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="hero">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">Contact Me!</p>
+      </div>
+    </div>
   </div>
-  <div class="main__form">
-    <h2>Contact Me!</h2>
-    <form action="#" method="POST">
-      <div class="form name">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name">
-      </div>
-      <div class="form email">
-      <label for="email">Email</label>
-      <input type="text" name="email" id="email">
-      </div>
-      <div class="form message">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="4" cols="120"></textarea>
-      </div>
-      <div class="submit">
-        <button type="submit">Send</button>
-      </div>
-    </form>
-
+  <div class="columns is-centered">
+    <section class="is-centered">
+      <form action="#" method="POST">
+        <div class="columns">
+          <div class="column is-half">
+            <div class="field">
+              <label class="label" for="name">Name</label>
+              <div class="control">
+                <input type="text" name="name" id="name" placeholder="Name Here">
+              </div>
+            </div>
+            <div class="field">
+              <label for="email" class="label">Email</label>
+              <div class="control">
+                <input type="text" name="email" id="email" placeholder="Email Here">
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="field">
+              <label class="label" for="message">Message</label>
+              <div class="control">
+                <textarea id="message" name="message" rows="10" cols="80"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <button class="button is-primary">Send</button>
+          </div>
+        </div>
+      </form>
+    </section>
   </div>
 </body>
 
