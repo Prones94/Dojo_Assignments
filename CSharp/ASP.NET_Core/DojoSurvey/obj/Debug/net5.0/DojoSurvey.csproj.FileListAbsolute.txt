@@ -32,3 +32,9 @@
 /Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/DojoSurvey/obj/Debug/net5.0/DojoSurvey.pdb
 /Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/DojoSurvey/obj/Debug/net5.0/DojoSurvey.genruntimeconfig.cache
 /Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/DojoSurvey/obj/Debug/net5.0/DojoSurvey.csproj.CopyComplete
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/DojoSurvey/obj/Debug/net5.0/Razor/Views/Home/Privacy.cshtml.g.cs
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/DojoSurvey/obj/Debug/net5.0/Razor/Views/Shared/Error.cshtml.g.cs
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/DojoSurvey/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/DojoSurvey/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/DojoSurvey/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs
+/Users/admin/Desktop/Coding/Coding Dojo/BootCamp/CSharp/ASP.NET_Core/DojoSurvey/obj/Debug/net5.0/Razor/Views/_ViewStart.cshtml.g.cs

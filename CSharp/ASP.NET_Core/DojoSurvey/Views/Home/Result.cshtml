@@ -7,18 +7,16 @@
   <title>Show Results</title>
 </head>
 <body>
-  <section class="section">
-    <div class="container border-light">
-        <p class="title">User Information</p>
-        <p>Name: @ViewBag.Name</p>
-        <p>Dojo Location: @ViewBag.Location</p>
-        <p>Favorite Language: @ViewBag.Language</p>
-        <p>Any Comments?</p>
-        <p>@ViewBag.Comment</p>
-        <button class="is-info">
-          <a href="/">Back to Survey</a>
-        </button>
-    </div>
-  </section>
+  <div class="container rounded rounded-lg col-6 py-3 my-3">
+    <h3>Results:
+      <p>Name: @Model.Name</p>
+      <p>Dojo Location: @Model.Location</p>
+      <p>Favorite Language: @Model.Language</p>
+      <p>Any Comments?</p>
+      <br>
+      <p>@Model.Comment</p>
+      <a href="/" class="btn btn-succes btn-success-outline">Go Back</a>
+    </h3>
+  </div>
 </body>
 </html>
