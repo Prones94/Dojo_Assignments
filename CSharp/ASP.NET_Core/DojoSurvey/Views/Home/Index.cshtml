@@ -13,11 +13,14 @@
     <hr>
     <div class="container rounded-lg col-6 bg-dark text-white py-3 my-3">
         <h3>Please fill out the information below.</h3>
-        <form action="/result" method="POST">
+        @model Survey
+        <form asp-action="Create" method="POST">
             <div class="form-group mt-3">
-                <label for="Name">Name:</label>
+                <span asp-validation-for="Name" class="text-danger"></span>
+                <label asp-for="Name"></label>
                 <input type="text" name="Name" class="form-control" placeholder="Your Name here">
-                <label for="Location">Location:</label>
+                <span class="text-danger" asp-validation-for="Location"></span>
+                <label asp-for="Location"></label>
                 <select name="Location" class="form-control">
                     <option value="">Select Location</option>
                     <option value="San Jose">San Jose</option>
@@ -25,7 +28,8 @@
                     <option value="Chicago">Los Angeles</option>
                     <option value="Seattle">Seattle</option>
                 </select>
-                <label for="Language">Favorite Language</label>
+                <span class="text-danger" asp-validation-for="Language"></span>
+                <label asp-for="Language"></label>
                 <select name="Language" class="form-control">
                     <option value="">Select Language</option>
                     <option value="React">React</option>
@@ -33,7 +37,8 @@
                     <option value="CSharp">CSharp</option>
                     <option value="JavaScript">JavaScript</option>
                 </select>
-                <label for="Comment">Comment (optional):</label>
+                <span class="text-danger" asp-validation-for="Comment"></span>
+                <label asp-for="Comment"></label>
                 <textarea name="Comment" class="form-control" cols="10" rows="3"></textarea>
                 <br>
                 <input type="submit" value="Submit" class="btn btn-success">
