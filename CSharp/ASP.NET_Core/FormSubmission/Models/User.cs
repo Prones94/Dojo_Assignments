@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace FormSubmission.Models
@@ -14,6 +16,11 @@ namespace FormSubmission.Models
     [Display(Name="Last Name")]
     public string LastName {get;set;}
 
+    [Required(ErrorMessage="Please enter date of birth")]
+    [ValidDate]
+    [Display(Name="DOB:")]
+    public DateTime BirthDate {get;set;}
+
     [Required(ErrorMessage="Please enter an age")]
     [Range(0,100, ErrorMessage="Must be still alive")]
     [Display(Name="Age")]
@@ -28,5 +35,15 @@ namespace FormSubmission.Models
     [MinLength(6, ErrorMessage="Must be at least 6 characters long")]
     [Display(Name="Password")]
     public string Password {get; set;}
+  }
+
+  public class ValidDateAttribute : ValidationAttribute
+  {
+    protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+    {
+      if((DateTime)value > DateTime.Today)
+        return new ValidationResult("Please enter a valid date");
+      return ValidationResult.Success;
+    }
   }
 }
