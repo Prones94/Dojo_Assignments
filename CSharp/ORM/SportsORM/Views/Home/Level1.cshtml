@@ -1,0 +1,384 @@
+<div class="card">
+    <div class="card-header bg-dark text-light">Level 1</div>
+    <div class="card-body">
+        <p>Using the SportsORM, complete all the following queries and show their results on Level1.cshtml.</p>
+        <ol>
+            @* <li>...all womens' leagues</li> *@
+            @* <li>...all leagues where sport is any type of hockey</li> *@
+            @* <li>...all leagues where sport is something OTHER THAN football</li> *@
+            @* <li>...all leagues that call themselves "conferences"</li> *@
+            @* <li>...all leagues in the Atlantic region</li> *@
+            @* <li>...all teams based in Dallas</li> *@
+            @* <li>...all teams named the Raptors</li> *@
+            @* <li>...all teams whose location includes "City"</li> *@
+            @* <li>...all teams whose names begin with "T"</li> *@
+            @* <li>...all teams, ordered alphabetically by location</li> *@
+            @* <li>...all teams, ordered by team name in reverse alphabetical order</li> *@
+            @* <li>...every player with last name "Cooper"</li> *@
+            @* <li>...every player with first name "Joshua"</li> *@
+            @* <li>...every player with last name "Cooper" EXCEPT those with "Joshua" as the first name</li> *@
+            @* <li>...all players with first name "Alexander" OR first name "Wyatt"</li> *@
+        </ol>
+    </div>
+</div>
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>all womens' leagues</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Team Name</th>
+                    <th>Team Sport</th>
+                </thead>
+                <tbody>
+                    @foreach(var women in ViewBag.WomensLeagues)
+                    {
+                        <tr>
+                            <td>@women.Name</td>
+                            <td>@women.Sport</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>all leagues where sport is any type of hockey</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Team Name</th>
+                    <th>Team Sport</th>
+                </thead>
+                <tbody>
+                    @foreach(var team in ViewBag.HockeyTeams)
+                    {
+                        <tr>
+                            <td>@team.Name</td>
+                            <td>@team.Sport</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>leagues where sport is something OTHER THAN football</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Team Name</th>
+                    <th>Team Sport</th>
+                </thead>
+                <tbody>
+                    @foreach(var team in ViewBag.NotTheFootball)
+                    {
+                        <tr>
+                            <td>@team.Name</td>
+                            <td>@team.Sport</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>all leagues that call themselves "conferences"</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Team Name</th>
+                    <th>Team Sport</th>
+                </thead>
+                <tbody>
+                    @foreach(var conference in ViewBag.Conferences)
+                    {
+                        <tr>
+                            <td>@conference.Name</td>
+                            <td>@conference.Sport</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>all leagues in the Atlantic region</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Team Name</th>
+                    <th>Team Sport</th>
+                </thead>
+                <tbody>
+                    @foreach(var team in ViewBag.AtlanticTeams)
+                    {
+                        <tr>
+                            <td>@team.Name</td>
+                            <td>@team.Sport</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>all teams based in Dallas</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Team Name</th>
+                    <th>Team Location</th>
+                </thead>
+                <tbody>
+                    @foreach(var team in ViewBag.DallasTeams)
+                    {
+                        <tr>
+                            <td>@team.TeamName</td>
+                            <td>@team.Location</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>all teams named the Raptors</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Team Name</th>
+                    <th>Team Location</th>
+                </thead>
+                <tbody>
+                    @foreach(var team in ViewBag.Raptors)
+                    {
+                        <tr>
+                            <td>@team.TeamName</td>
+                            <td>@team.Location</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>all teams whose location includes "City"</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Team Name</th>
+                    <th>Team Location</th>
+                </thead>
+                <tbody>
+                    @foreach(var city in ViewBag.CityTeams)
+                    {
+                        <tr>
+                            <td>@city.TeamName</td>
+                            <td>@city.Location</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>all teams whose names begin with "T"</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Team Name</th>
+                    <th>Team Location</th>
+                </thead>
+                <tbody>
+                    @foreach(var team in ViewBag.StartsWithT)
+                    {
+                        <tr>
+                            <td>@team.TeamName</td>
+                            <td>@team.Location</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>all teams, ordered alphabetically by location</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Team Name</th>
+                    <th>Team Location</th>
+                </thead>
+                <tbody>
+                    @foreach(var team in ViewBag.Sorted)
+                    {
+                        <tr>
+                            <td>@team.TeamName</td>
+                            <td>@team.Location</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>all teams, ordered by team name in reverse alphabetical order</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Team Name</th>
+                    <th>Team Location</th>
+                </thead>
+                <tbody>
+                    @foreach(var team in ViewBag.Reverse)
+                    {
+                        <tr>
+                            <td>@team.TeamName</td>
+                            <td>@team.Location</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>every player with last name "Cooper"</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </thead>
+                <tbody>
+                    @foreach(var player in ViewBag.Cooper)
+                    {
+                        <tr>
+                            <td>@player.FirstName</td>
+                            <td>@player.LastName</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>every player with first name "Joshua"</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </thead>
+                <tbody>
+                    @foreach(var player in ViewBag.Joshua)
+                    {
+                        <tr>
+                            <td>@player.FirstName</td>
+                            <td>@player.LastName</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>every player with last name "Cooper" EXCEPT those with "Joshua" as the first name</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </thead>
+                <tbody>
+                    @foreach(var player in ViewBag.FilteredName)
+                    {
+                        <tr>
+                            <td>@player.FirstName</td>
+                            <td>@player.LastName</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col col-6">
+    <div class="card">
+        <div class="card-header">
+            <h2>all players with first name "Alexander" OR first name "Wyatt"</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </thead>
+                <tbody>
+                    @foreach(var player in ViewBag.MultipleNames)
+                    {
+                        <tr>
+                            <td>@player.FirstName</td>
+                            <td>@player.LastName</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
