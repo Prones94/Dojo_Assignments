@@ -1,0 +1,51 @@
+
+
+
+@model Dish
+<div class="container">
+  <h1 class="display text-center">Add a Dish</h1>
+  <hr>
+  <form asp-action="AddDish" method="POST">
+    <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <label asp-for="Chef" class="form-label"></label>
+        <input type="text" asp-for="Chef" class="form-control">
+        <span class="text-danger" asp-validation-for="Chef"></span>
+      </div>
+      <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" type="text" class="form-control">
+        <span class="text-danger" asp-validation-for="Name"></span>
+      </div>
+      <div class="mb-3">
+        <label asp-for="Calories" class="form-label"></label>
+        <input asp-for="Calories" type="text" class="form-control">
+        <span class="text-danger" asp-validation-for="Calories"></span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="mb-3">
+        <label asp-for="Tastiness" class="form-label"></label>
+        <select asp-for="Tastiness" id="tastiness" class="form-select">
+          <option selected>Choose Below</option>
+          <option value="1"></option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <span class="text-danger" asp-validation-for="Tastiness"></span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-floating">
+        <textarea asp-for="Description"  class="form-control" style="height:100px"></textarea>
+        <label asp-for="Description" class="form-label"></label>
+      </div>
+    </div>
+    </div>
+    <br>
+    <input type="submit" value="Add Dish" class="btn btn-primary">
+  </form>
+</div>
