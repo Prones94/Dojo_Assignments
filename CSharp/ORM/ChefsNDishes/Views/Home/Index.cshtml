@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class="border row d-flex align-items-center justify-content-space-between" >
+        <p class="h3"><a href="/" class="active">Chefs</a> || <a href="/dishes">Dishes</a></p>
+        <p class="h5"><a href="/newdish">Add a Chef</a></p>
+    </div>
+    <h1 class="display-2">Check out our roster of Chefs!</h1>
+    <hr>
+    <table class="table table-striped">
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th># of Dishes</th>
+        </thead>
+        <tbody>
+            @foreach(var chef in ViewBag.AllChefs)
+        </tbody>
+        {
+            int age = 0;
+            age = DateTime.Now.Year - @chef.DOB.Year;
+            <tr>
+                <td>@chef.FirstName @chef.LastName</td>
+                <td>@chef.age</td>
+                <td>@chef.AllDishes.Count</td>
+            </tr>
+        }
+    </table>
+</div>
