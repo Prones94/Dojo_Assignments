@@ -1,0 +1,38 @@
+@{
+  ViewData["Title"] = "Bank Page";
+}
+
+@model AccountUser
+<div class="container">
+  <div class="row">
+    <h3>Welcome @LoggedInUser.FirstName @LoggedInUser.LastName</h3>
+    <p>CurrentBalance @Transactions.Sum(t => t.Amount)</p>
+    <form asp-action="CreateTransaction" method="POST">
+      <div class="row">
+        <label asp-for="Form.Amount">Deposit/Withdraw:</label>
+        <input class="form-control" asp-for="Form.Amount">
+        <span class="text-danger" asp-validation-for="Form.Amount"></span>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+      <div>
+        <table>
+          <thead>
+            <th>Amount</th>
+            <th>Date</th>
+          </thead>
+          <tbody>
+            @foreach(var money in Transaction)
+            {
+              <tr>
+                <td>@amount.Amount</td>
+                <td>@amount.CreatedAt</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </form>
+  </div>
+</div>
